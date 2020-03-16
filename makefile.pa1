@@ -1,0 +1,7 @@
+CC=g++
+
+parseURL: main.cpp parse.h parse.cpp version.h version.cpp
+	$(CC) -o parseURL main.cpp parse.h parse.cpp version.h version.cpp
+
+clearall:
+	rm -rf *.o parseURL
